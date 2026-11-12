@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos de Capacitación</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Cursos de Capacitación</h1>
+    <p class="subtitle">Explora nuestra oferta formativa disponible</p>
+  </header>
+
+  <main class="container">
+    <div id="loader" class="loader" aria-live="polite">
+      <span class="spinner"></span>
+      <p>Cargando cursos...</p>
+    </div>
+
+    <div id="error" class="error hidden" role="alert"></div>
+
+    <section id="courses-grid" class="courses-grid" aria-live="polite"></section>
+
+    <p id="empty-state" class="empty-state hidden">
+      No hay cursos disponibles por el momento.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Plataforma de Capacitación</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
